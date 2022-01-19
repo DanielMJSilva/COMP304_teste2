@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Stock Information"
+        android:textSize="30dp"
+        android:layout_margin="8dp"
+        android:textStyle="bold"
+        android:textColor="@color/purple_700"/>
+
+    <Button
+        android:id="@+id/buttonInsert"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="INSERT STOCKS"
+        android:textSize="22dp"
+        android:backgroundTint="@color/cardview_dark_background"/>
+    <TextView
+        android:id="@+id/textViewGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Select stock symbol:"
+        android:textSize="22dp"
+        android:layout_margin="8dp"
+        android:textStyle="bold"
+        />
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:tooltipText="Select stock symbol"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RadioButton
+            android:id="@+id/radioButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="" />
+
+        <RadioButton
+            android:id="@+id/radioButton2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="" />
+
+        <RadioButton
+            android:id="@+id/radioButton3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/buttonDisplay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Display stock info"
+        android:textSize="18dp"
+        android:backgroundTint="@color/cardview_dark_background"/>
+    <TextView
+        android:id="@+id/textViewDisplay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="" />
+
+</LinearLayout>
